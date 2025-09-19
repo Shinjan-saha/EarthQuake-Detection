@@ -24,6 +24,48 @@ The system uses an **RMS (Root Mean Square) based algorithm** to continuously mo
 
 ---
 
+
+## 📌 Hardware Connections
+
+### 1. MPU6050 (I²C)
+| MPU6050 Pin | Arduino Uno/Nano |
+|-------------|------------------|
+| VCC         | 3.3V / 5V (depending on module) |
+| GND         | GND |
+| SCL         | A5 |
+| SDA         | A4 |
+
+---
+
+### 2. OLED Display (SSD1306, SPI Mode)
+| OLED Pin | Arduino Uno/Nano |
+|----------|------------------|
+| VCC      | 3.3V / 5V |
+| GND      | GND |
+| SCLK (D1)| D13 (SCK) |
+| MOSI (D0)| D11 (MOSI) |
+| DC       | D9 |
+| CS       | D10 |
+| RESET    | D8 |
+
+---
+
+### 3. Buzzer
+| Buzzer Pin | Arduino Uno/Nano |
+|------------|------------------|
+| + (VCC)    | D4 |
+| – (GND)    | GND |
+
+---
+
+### 4. LED
+| LED Pin | Arduino Uno/Nano |
+|---------|------------------|
+| Anode (+) | D7 (through 220Ω resistor) |
+| Cathode (–) | GND |
+
+---
+
 ## 📚 Libraries Used
 Make sure you install the following libraries from the Arduino IDE Library Manager:
 - [`Wire.h`](https://www.arduino.cc/en/reference/wire) → I2C communication  
